@@ -7,3 +7,6 @@
 [submodule "vendor/rinari"]
 	path = vendor/rinari
 	url = git://github.com/eschulte/rinari.git
+[submodule "vendor/cheat.el"]
+	path = vendor/cheat.el
+	url = git://github.com/defunkt/cheat.el.git
