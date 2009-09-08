@@ -13,16 +13,28 @@
 (require 'textmate)
 (textmate-mode)
 
-;; Interactively Do Things (highly recommended, but not strictly required)
+; Interactively Do Things (highly recommended, but not strictly required)
 (require 'ido)
 (ido-mode t)
 
-;; Rinari
+; Rinari
 (add-to-list 'load-path "~/.emacs.d/vendor/rinari")
 (require 'rinari)
 
 ; cheat.el
 (add-to-list 'load-path "~/.emacs.d/vendor/cheat.el")
 (require 'cheat)
+
+; yasnippet
+(add-to-list 'load-path "~/.emacs.d/plugins/yasnippet-0.6.1b")
+(require 'yasnippet) ;; not yasnippet-bundle
+(yas/initialize)
+(yas/load-directory "~/.emacs.d/plugins/yasnippet-0.6.1b/snippets")
+
+; RSpec mode
+(add-to-list 'load-path "~/.emacs.d/vendor/rspec-mode")
+(require 'mode-compile)
+(require 'el-expectations)
+(require 'rspec-mode)
 
 (provide 'init)
