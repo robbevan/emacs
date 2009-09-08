@@ -10,3 +10,6 @@
 [submodule "vendor/cheat.el"]
 	path = vendor/cheat.el
 	url = git://github.com/defunkt/cheat.el.git
+[submodule "vendor/rspec-mode"]
+	path = vendor/rspec-mode
+	url = git://github.com/pezra/rspec-mode.git
