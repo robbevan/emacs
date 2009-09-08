@@ -21,4 +21,8 @@
 (add-to-list 'load-path "~/.emacs.d/vendor/rinari")
 (require 'rinari)
 
+; cheat.el
+(add-to-list 'load-path "~/.emacs.d/vendor/cheat.el")
+(require 'cheat)
+
 (provide 'init)
