@@ -13,3 +13,6 @@
 [submodule "vendor/rspec-mode"]
 	path = vendor/rspec-mode
 	url = git://github.com/pezra/rspec-mode.git
+[submodule "vendor/omnifocus.el"]
+	path = vendor/omnifocus.el
+	url = git://github.com/robbevan/omnifocus.el.git
