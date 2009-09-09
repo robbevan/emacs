@@ -37,4 +37,9 @@
 (require 'el-expectations)
 (require 'rspec-mode)
 
+; omnifocus.el
+(add-to-list 'load-path "~/.emacs.d/vendor/omnifocus.el")
+(autoload 'send-region-to-omnifocus-quickentry "omnifocus" nil t)
+(global-set-key "\C-c\C-o" 'send-region-to-omnifocus-quickentry)
+
 (provide 'init)
