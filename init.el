@@ -42,4 +42,18 @@
 (autoload 'send-region-to-omnifocus-quickentry "omnifocus" nil t)
 (global-set-key "\C-c\C-o" 'send-region-to-omnifocus-quickentry)
 
+; org-mode
+(require 'org-install)
+(add-to-list 'auto-mode-alist '("\\.org$" . org-mode))
+(define-key global-map "\C-cl" 'org-store-link)
+(define-key global-map "\C-ca" 'org-agenda)
+(setq org-agenda-files (list "~/org/inbox.org"
+                             "~/org/personal.org"
+                             "~/org/work.org"))
+(setq org-log-done t)
+(setq org-mobile-directory "/Volumes/robbevan/org")
+(setq org-mobile-inbox-for-pull "~/org/inbox.org")
+
+
+
 (provide 'init)
